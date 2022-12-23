@@ -1,0 +1,647 @@
+/* ======= General Styles & Reset Default - START ======= */
+:root {
+	--color-main: #303030;
+	--color-text: #555555;
+	--color-contrast: #ffffff;
+	--color-accent: #ff6c00;
+	--color-secondary: #9da4bd;
+	--color-secondaryMod: rgba(157, 164, 189, 0.6);
+	--color-secondaryModFooter: rgba(157, 164, 189, 0.4);
+	--bg-light: #f7f7f7;
+	--bg-dark: #191c26;
+}
+
+address {
+	font-style: inherit;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: var(--color-main);
+
+	background-color: var(--color-contrast);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+	margin-block: 0;
+}
+
+p {
+	letter-spacing: 0.02em;
+}
+
+td {
+	padding: 0;
+}
+
+tr:not(:last-child) > td {
+	padding-bottom: 20px;
+}
+
+ul {
+	padding-left: 0;
+}
+
+.centered-text {
+	text-align: center;
+}
+
+.container {
+	width: 1200px;
+	margin-inline: auto;
+	padding-inline: 15px;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-vert-centered {
+	display: flex;
+	align-items: center;
+}
+
+.nounderline {
+	text-decoration: none;
+}
+
+.nobullet {
+	list-style: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/* Temporary BLACK Background class */
+.black-bg {
+	background-color: black;
+}
+/* ======== General Styles & Reset Default - END ======== */
+
+/* ================= Components - START ================= */
+.comp-link-behaviour:hover,
+.comp-link-behaviour:focus {
+	color: var(--color-accent);
+}
+
+.comp-btn {
+	min-width: 160px;
+	padding-block: 12px;
+	padding-inline: 20px;
+
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+
+	border: 1px solid var(--color-accent);
+	border-radius: 25px;
+	background: transparent;
+	cursor: pointer;
+}
+
+.comp-btn:hover,
+.comp-btn:focus {
+	color: var(--color-contrast);
+
+	background-color: var(--color-accent);
+}
+
+/* BUTTON Light Text Theme */
+.btn-light {
+	color: var(--color-contrast);
+}
+
+/* BUTTON Dark Text Theme */
+.btn-dark {
+	color: var(--color-main);
+}
+
+.comp-media-link {
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.36;
+	letter-spacing: 0.2em;
+	color: var(--color-main);
+}
+
+.comp-section {
+	padding-block: 120px;
+}
+
+.comp-wrapper-intro {
+	margin-bottom: 20px;
+}
+
+.comp-line {
+	width: 60px;
+	height: 1px;
+	margin-right: 20px;
+}
+
+.comp-line-dark {
+	background-color: var(--color-main);
+}
+
+.comp-line-light {
+	background-color: var(--color-secondaryMod);
+}
+
+.comp-section-intro {
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.36;
+	letter-spacing: normal;
+	text-transform: uppercase;
+}
+
+/* Section INTRO Light Text Color Theme */
+.intro-light {
+	color: var(--color-secondaryMod);
+}
+
+.comp-section-heading {
+	font-family: 'Raleway', sans-serif;
+	font-size: 42px;
+	line-height: 1.17;
+	letter-spacing: 0.05em;
+}
+
+/* Section HEADING Light Text Color Theme */
+.heading-light {
+	color: var(--color-contrast);
+}
+
+.comp-section-subtitle {
+	margin-bottom: 20px;
+
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.67;
+	color: var(--color-text);
+}
+
+/* Section SUBTITLE Light Text Color Theme */
+.subtitle-light {
+	color: var(--color-secondary);
+}
+
+/* ================== Components - END ================== */
+
+/* =================== Header - START =================== */
+.header {
+	padding-block: 32px;
+}
+
+/* .header-navigation {
+	...
+} */
+
+.header-list {
+	margin-left: 131px;
+
+	font-size: 12px;
+	line-height: 1.33;
+}
+
+.header-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.header-link {
+	padding-block: 20px;
+
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.33;
+	letter-spacing: 0.1em;
+	color: var(--color-contrast);
+}
+
+.header-phone {
+	margin-left: auto;
+	margin-right: 43px;
+}
+
+/* ===================== Header - END =================== */
+
+/* ================ Section Hero - START ================ */
+/* .hero {
+	...
+} */
+
+.hero-media-content {
+	width: 100px;
+
+	background-color: var(--color-contrast);
+}
+
+/* .hero-media-list {
+	...
+} */
+
+/* .hero-media-item {
+	...
+} */
+
+.hero-content {
+	flex-grow: 1;
+
+	/* padding-top: 152px;
+	padding-bottom: 237px; */
+	padding: 152px 20px 40px 100px;
+}
+
+.hero-heading {
+	margin-bottom: 20px;
+
+	font-family: 'Raleway', sans-serif;
+	font-size: 72px;
+	line-height: 1.18;
+	letter-spacing: 0.05em;
+	color: var(--color-contrast);
+}
+
+.hero-subtitle {
+	margin-bottom: 144px;
+}
+
+.hero-carousel-list {
+	gap: 22px;
+	justify-content: flex-end;
+}
+
+.hero-carousel-item {
+	--color-carousel: var(--color-contrast);
+}
+
+.hero-carousel-item-right {
+	text-align: right;
+}
+
+.hero-carousel-item:hover,
+.hero-carousel-item:focus {
+	--color-carousel: var(--color-secondaryMod);
+}
+
+.hero-carousel-link {
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	color: var(--color-carousel);
+}
+
+.hero-carousel-link:hover,
+.hero-carousel-link:focus {
+	color: var(--color-secondaryMod);
+}
+
+.hero-carousel-line {
+	margin-right: 0;
+
+	background-color: var(--color-carousel);
+}
+/* ================= Section Hero - END ================= */
+
+/* ================ Section About - START =============== */
+/* .about {
+	...
+} */
+
+.about-list {
+	margin-right: 30px;
+	gap: 30px;
+}
+
+/* .about-item {
+	...
+} */
+
+.about-content {
+	max-width: 470px;
+}
+
+.about-heading {
+	margin-bottom: 20px;
+}
+
+.about-text {
+	margin-bottom: 40px;
+
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.86;
+	color: var(--color-text);
+}
+/* ================= Section About - END ================ */
+
+/* ========== Section Services & Prices - START ========= */
+/* .services {
+	...
+} */
+
+.services-heading {
+	margin-bottom: 44px;
+}
+
+.services-content {
+	gap: 30px;
+	margin-bottom: 44px;
+}
+
+.services-table {
+	flex-basis: calc((100% - 30px) / 2);
+	padding: 30px 21px 30px 21px;
+
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.67;
+	color: var(--color-secondary);
+}
+
+.services-table-left {
+	background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.services-table-right {
+	background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.services-item {
+	align-items: baseline;
+}
+
+.services-line {
+	flex-grow: 1;
+	height: 1px;
+	margin-inline: 12px;
+
+	/* background: rgba(157, 164, 189, 0.12); */
+	background-color: #fff;
+}
+
+.services-price {
+	width: 118px;
+
+	text-align: right;
+}
+
+.services-btn {
+	display: block;
+	margin-inline: auto;
+}
+/* =========== Section Services & Prices - END ========== */
+
+/* ============== Section Our Facts - START ============= */
+.facts {
+	padding-bottom: 155px;
+}
+
+.facts-list {
+	flex-wrap: wrap;
+	gap: 30px;
+	width: 600px;
+	padding-left: 100px;
+	padding-right: 130px;
+}
+
+.facts-item {
+	width: 170px;
+	padding-block: 20px;
+	padding-inline: 24px;
+	/* flex-basis: calc((100% - 30px) / 2); */
+
+	text-align: center;
+	background-color: var(--bg-light);
+}
+
+/* Defines position (higher / lower) of FACTS ITEM */
+/* .facts-higher {
+
+} */
+
+.facts-lower {
+	transform: translateY(35px);
+}
+
+.facts-item-content {
+	justify-content: center;
+}
+
+.facts-number {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1.36;
+	letter-spacing: 0.05em;
+}
+
+.facts-plus {
+	margin-left: 1px;
+	padding-top: 4px;
+
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.38;
+	color: var(--color-accent);
+}
+
+.facts-description {
+	margin-top: 6px;
+
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.36;
+	letter-spacing: normal;
+}
+
+.facts-content {
+	max-width: 500px;
+}
+
+.facts-heading {
+	max-width: 430px;
+	margin-bottom: 20px;
+}
+/* =============== Section Our Facts - END ============== */
+
+/* ============= Section Our Barbers - START ============ */
+.barbers {
+	padding-bottom: 90px;
+
+	background-color: var(--bg-light);
+}
+
+.barbers-heading {
+	margin-bottom: 44px;
+}
+
+.barbers-list {
+	gap: 30px;
+}
+
+.barbers-item {
+	flex-basis: calc((100% - 60px) / 3);
+
+	text-align: center;
+}
+
+.barbers-item-content {
+	padding-block: 30px;
+	padding-inline: 82px;
+}
+
+.barbers-item-heading {
+	margin-bottom: 8px;
+
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.39;
+	letter-spacing: 0.02em;
+	color: #303030;
+}
+
+.barbers-item-description {
+	margin-bottom: 30px;
+
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.36;
+	color: var(--color-accent);
+}
+/* ============== Section Our Barbers - END ============= */
+
+/* ============= Section Our Gallery - START ============ */
+/* .gallery {
+	...
+} */
+
+.wrapper-intro-gallery {
+	margin-bottom: 44px;
+}
+
+.gallery-list {
+	gap: 30px;
+}
+
+.gallery-item {
+	flex-basis: calc((100% - 90px) / 4);
+}
+/* ============== Section Our Gallery - END ============= */
+
+.bottom {
+	padding-top: 130px;
+
+	background-color: var(--bg-dark);
+}
+
+/* =============== Section Booking - START ============== */
+.booking {
+	width: 50%;
+	margin-right: 30px;
+}
+
+.booking-heading {
+	margin-bottom: 44px;
+}
+
+.booking-btn {
+	margin-top: 44px;
+}
+/* ================ Section Booking - END =============== */
+
+/* ============== Section Contacts - START ============== */
+.contacts {
+	width: 50%;
+	padding-left: 100px;
+}
+
+.contacts-heading {
+	margin-bottom: 40px;
+}
+
+/* .address {
+	...
+} */
+
+/* .address-list {
+	...
+} */
+
+.address-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.address-text {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.67;
+	color: var(--color-secondary);
+}
+
+/* Text weight modificator for exactly ADDRESS */
+.address-strong {
+	font-weight: 700;
+}
+
+.contacts-wrapper-intro {
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+
+.contacts-line-light {
+	background-color: var(--color-secondaryModFooter);
+}
+/* =============== Section Contacts - END =============== */
+
+/* =================== Footer - START =================== */
+.footer {
+	padding-block: 56px;
+}
+
+.footer-copyright {
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.36;
+	letter-spacing: 0.2em;
+	color: var(--color-secondary);
+}
+
+.footer-list {
+	margin-left: auto;
+
+	font-size: 11px;
+}
+
+.footer-item:nth-child(2) {
+	margin-inline: 40px;
+}
+
+.footer-line {
+	margin-right: 0;
+}
+/* ==================== Footer - END ==================== */
