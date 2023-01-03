@@ -108,6 +108,7 @@ ul {
 
 .comp-btn {
 	min-width: 160px;
+	height: 40px;
 	padding-block: 12px;
 	padding-inline: 20px;
 
@@ -149,10 +150,12 @@ ul {
 }
 
 .comp-section {
+	max-width: 1600px;
+	margin-inline: auto;
 	padding-block: 120px;
 }
 
-.comp-wrapper-intro {
+/* .comp-wrapper-intro {
 	margin-bottom: 20px;
 }
 
@@ -168,14 +171,29 @@ ul {
 
 .comp-line-light {
 	background-color: var(--color-secondaryMod);
-}
+} */
 
 .comp-section-intro {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+
 	font-size: 11px;
 	font-weight: 600;
 	line-height: 1.36;
 	letter-spacing: normal;
 	text-transform: uppercase;
+}
+
+.comp-section-intro::before,
+.footer-list::before {
+	content: '';
+	display: inline-block;
+	width: 60px;
+	height: 1px;
+	margin-right: 20px;
+
+	background-color: currentColor;
 }
 
 /* Section INTRO Light Text Color Theme */
@@ -216,6 +234,12 @@ ul {
 	padding-block: 32px;
 }
 
+.header-logo-icon {
+	display: block;
+
+	fill: var(--color-main);
+}
+
 /* .header-navigation {
 	...
 } */
@@ -249,9 +273,13 @@ ul {
 /* ===================== Header - END =================== */
 
 /* ================ Section Hero - START ================ */
-/* .hero {
-	...
-} */
+.hero > .container {
+	background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+		url(../images/bg-hero-01.jpg);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 .hero-media-content {
 	width: 100px;
@@ -360,99 +388,105 @@ ul {
 /* ================= Section About - END ================ */
 
 /* ========== Section Services & Prices - START ========= */
-/* .services {
-	...
-} */
+.prices {
+	background-color: #111319;
+	background-image: url(../images/bg-prices.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 
-.services-heading {
+.prices-heading {
 	margin-bottom: 44px;
 }
 
-.services-content {
+.prices-content {
 	gap: 30px;
 	margin-bottom: 44px;
 }
 
-.services-table {
+.prices-list {
 	flex-basis: calc((100% - 30px) / 2);
-	padding: 30px 21px 30px 21px;
+	padding: 30px 20px 30px 20px;
+	gap: 30px;
+}
 
+.prices-list:first-child {
+	background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-list:last-child {
+	background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.prices-item {
+	gap: 12px;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.prices-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.prices-item::before {
+	content: '';
+	flex-grow: 1;
+	height: 1px;
+
+	background-color: rgba(157, 164, 189, 0.12);
+}
+
+.prices-item-text {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.67;
 	color: var(--color-secondary);
 }
 
-.services-table-left {
-	background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+.prices-item-text:first-child {
+	order: -1;
 }
 
-.services-table-right {
-	background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
-
-.services-item {
-	align-items: baseline;
-}
-
-.services-line {
-	flex-grow: 1;
-	height: 1px;
-	margin-inline: 12px;
-
-	/* background: rgba(157, 164, 189, 0.12); */
-	background-color: #fff;
-}
-
-.services-price {
-	width: 118px;
-
-	text-align: right;
-}
-
-.services-btn {
+.prices-btn {
 	display: block;
 	margin-inline: auto;
 }
 /* =========== Section Services & Prices - END ========== */
 
 /* ============== Section Our Facts - START ============= */
-.facts {
-	padding-bottom: 155px;
+.facts > .container {
+	padding-left: 115px;
+	gap: 130px;
 }
 
 .facts-list {
 	flex-wrap: wrap;
-	gap: 30px;
-	width: 600px;
-	padding-left: 100px;
-	padding-right: 130px;
+	width: 370px;
 }
 
 .facts-item {
 	width: 170px;
 	padding-block: 20px;
 	padding-inline: 24px;
-	/* flex-basis: calc((100% - 30px) / 2); */
 
 	text-align: center;
 	background-color: var(--bg-light);
 }
 
-/* Defines position (higher / lower) of FACTS ITEM */
-/* .facts-higher {
-
-} */
-
-.facts-lower {
-	transform: translateY(35px);
+.facts-item:nth-child(odd) {
+	margin-right: 30px;
+	margin-bottom: 30px;
 }
 
-.facts-item-content {
-	justify-content: center;
+.facts-item:nth-child(even) {
+	margin-top: 30px;
 }
 
 .facts-number {
+	display: flex;
+	justify-content: center;
+
 	font-family: 'Open Sans', sans-serif;
 	font-size: 42px;
 	font-weight: 700;
@@ -460,9 +494,10 @@ ul {
 	letter-spacing: 0.05em;
 }
 
-.facts-plus {
-	margin-left: 1px;
-	padding-top: 4px;
+.facts-number::after {
+	content: '+';
+	margin-left: 2px;
+	padding-top: 7px;
 
 	font-size: 16px;
 	font-weight: 600;
@@ -533,6 +568,35 @@ ul {
 	line-height: 1.36;
 	color: var(--color-accent);
 }
+
+.barbers-media-list {
+	gap: 10px;
+}
+
+.barbers-media-link {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	justify-content: center;
+	align-items: center;
+
+	color: var(--color-main);
+
+	background-color: var(--color-contrast);
+	border-radius: 50%;
+}
+
+.barbers-media-link:hover,
+.barbers-media-link:focus {
+	color: var(--color-accent);
+}
+
+.barbers-media-icon {
+	width: 20px;
+	height: 20px;
+
+	fill: currentColor;
+}
 /* ============== Section Our Barbers - END ============= */
 
 /* ============= Section Our Gallery - START ============ */
@@ -540,7 +604,7 @@ ul {
 	...
 } */
 
-.wrapper-intro-gallery {
+.gallery-intro {
 	margin-bottom: 44px;
 }
 
@@ -557,12 +621,16 @@ ul {
 	padding-top: 130px;
 
 	background-color: var(--bg-dark);
+	background-image: url(../images/bg-contacts.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 /* =============== Section Booking - START ============== */
 .booking {
-	width: 50%;
-	margin-right: 30px;
+	max-width: 570px;
+	margin-right: 130px;
 }
 
 .booking-heading {
@@ -576,8 +644,8 @@ ul {
 
 /* ============== Section Contacts - START ============== */
 .contacts {
-	width: 50%;
-	padding-left: 100px;
+	width: 270px;
+	/* padding-left: 100px; */
 }
 
 .contacts-heading {
@@ -596,6 +664,11 @@ ul {
 	margin-bottom: 20px;
 }
 
+a.address-text {
+	display: flex;
+	gap: 16px;
+}
+
 .address-text {
 	font-size: 18px;
 	font-weight: 400;
@@ -603,12 +676,28 @@ ul {
 	color: var(--color-secondary);
 }
 
+.address-text-centered {
+	align-items: center;
+}
+
 /* Text weight modificator for exactly ADDRESS */
 .address-strong {
 	font-weight: 700;
 }
 
-.contacts-wrapper-intro {
+.address-icon {
+	width: 24px;
+	height: 24px;
+
+	stroke: currentColor;
+	fill: none;
+}
+
+.address-icon-top {
+	padding-top: 6px;
+}
+
+.contacts-intro {
 	margin-top: 70px;
 	margin-bottom: 20px;
 }
@@ -637,11 +726,11 @@ ul {
 	font-size: 11px;
 }
 
-.footer-item:nth-child(2) {
-	margin-inline: 40px;
+.footer-list::before {
+	margin-right: 40px;
 }
 
-.footer-line {
-	margin-right: 0;
+.footer-item:first-child {
+	margin-right: 40px;
 }
 /* ==================== Footer - END ==================== */
