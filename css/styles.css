@@ -101,6 +101,10 @@ ul {
 /* ======== General Styles & Reset Default - END ======== */
 
 /* ================= Components - START ================= */
+.comp-link-behaviour {
+	transition: color 250ms;
+}
+
 .comp-link-behaviour:hover,
 .comp-link-behaviour:focus {
 	color: var(--color-accent);
@@ -121,7 +125,9 @@ ul {
 	border: 1px solid var(--color-accent);
 	border-radius: 25px;
 	background: transparent;
+
 	cursor: pointer;
+	transition: color 250ms, background-color 250ms;
 }
 
 .comp-btn:hover,
@@ -142,6 +148,8 @@ ul {
 }
 
 .comp-media-link {
+	display: block;
+
 	font-size: 11px;
 	font-weight: 600;
 	line-height: 1.36;
@@ -185,10 +193,11 @@ ul {
 	text-transform: uppercase;
 }
 
+.hero-media-list::before,
 .comp-section-intro::before,
-.footer-list::before {
+.footer-media-list::before {
 	content: '';
-	display: inline-block;
+	/* display: inline-block; */
 	width: 60px;
 	height: 1px;
 	margin-right: 20px;
@@ -231,7 +240,17 @@ ul {
 
 /* =================== Header - START =================== */
 .header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+
+	width: 100%;
 	padding-block: 32px;
+}
+
+.header > .container {
+	padding-right: calc(15px + 17px);
 }
 
 .header-logo-icon {
@@ -274,33 +293,52 @@ ul {
 
 /* ================ Section Hero - START ================ */
 .hero > .container {
-	background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+	/* background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
 		url(../images/bg-hero-01.jpg);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; */
+
+	position: relative;
 }
 
 .hero-media-content {
+	position: relative;
+
 	width: 100px;
 
 	background-color: var(--color-contrast);
 }
 
-/* .hero-media-list {
-	...
-} */
+.hero-media-list {
+	position: absolute;
+	bottom: 40px;
+	left: 34px;
 
-/* .hero-media-item {
-	...
-} */
+	/* width: 100%; */
+
+	transform: rotate(-90deg);
+	transform-origin: left center;
+}
+
+.hero-media-list::before {
+	margin-right: 40px;
+}
+
+.hero-media-item:first-child {
+	margin-right: 40px;
+}
 
 .hero-content {
 	flex-grow: 1;
+	padding: 272px 526px 208px 100px;
 
-	/* padding-top: 152px;
-	padding-bottom: 237px; */
-	padding: 152px 20px 40px 100px;
+	background-color: var(--bg-dark);
+	background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+		url(../images/bg-hero-01.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .hero-heading {
@@ -314,11 +352,15 @@ ul {
 }
 
 .hero-subtitle {
-	margin-bottom: 144px;
+	margin-bottom: 0px;
 }
 
 .hero-carousel-list {
-	gap: 22px;
+	position: absolute;
+	bottom: 40px;
+	right: 37px;
+
+	gap: 24px;
 	justify-content: flex-end;
 }
 
@@ -326,21 +368,20 @@ ul {
 	--color-carousel: var(--color-contrast);
 }
 
-.hero-carousel-item-right {
+.hero-carousel-item:last-child {
 	text-align: right;
 }
 
-.hero-carousel-item:hover,
-.hero-carousel-item:focus {
-	--color-carousel: var(--color-secondaryMod);
-}
-
 .hero-carousel-link {
+	display: block;
+
 	font-size: 11px;
 	font-weight: 600;
 	line-height: 1.36;
 	letter-spacing: 0.1em;
 	color: var(--color-carousel);
+
+	transition: color 250ms;
 }
 
 .hero-carousel-link:hover,
@@ -348,11 +389,22 @@ ul {
 	color: var(--color-secondaryMod);
 }
 
-.hero-carousel-line {
+.hero-carousel-link::after {
+	content: '';
+
+	display: block;
+	width: 60px;
+	height: 1px;
+	margin-top: 8px;
+
+	background-color: currentColor;
+}
+
+/* .hero-carousel-line {
 	margin-right: 0;
 
 	background-color: var(--color-carousel);
-}
+} */
 /* ================= Section Hero - END ================= */
 
 /* ================ Section About - START =============== */
@@ -584,6 +636,8 @@ ul {
 
 	background-color: var(--color-contrast);
 	border-radius: 50%;
+
+	transition: color 250ms;
 }
 
 .barbers-media-link:hover,
@@ -617,20 +671,25 @@ ul {
 }
 /* ============== Section Our Gallery - END ============= */
 
-.bottom {
-	padding-top: 130px;
+.contact-wrapper {
+	padding-block: 0;
 
 	background-color: var(--bg-dark);
 	background-image: url(../images/bg-contacts.png);
 	background-position: right center;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: calc(50% - 15px) 100%;
+}
+
+.contact-wrapper > .container {
+	gap: 30px;
 }
 
 /* =============== Section Booking - START ============== */
 .booking {
-	max-width: 570px;
-	margin-right: 130px;
+	flex-basis: calc((100% - 30px) / 2);
+	padding-top: 130px;
+	padding-bottom: 120px;
 }
 
 .booking-heading {
@@ -644,8 +703,10 @@ ul {
 
 /* ============== Section Contacts - START ============== */
 .contacts {
-	width: 270px;
-	/* padding-left: 100px; */
+	flex-basis: calc((100% - 30px) / 2);
+	padding-top: 130px;
+	padding-bottom: 120px;
+	padding-left: 100px;
 }
 
 .contacts-heading {
@@ -720,17 +781,17 @@ a.address-text {
 	color: var(--color-secondary);
 }
 
-.footer-list {
+.footer-media-list {
 	margin-left: auto;
 
 	font-size: 11px;
 }
 
-.footer-list::before {
+.footer-media-list::before {
 	margin-right: 40px;
 }
 
-.footer-item:first-child {
+.footer-media-item:first-child {
 	margin-right: 40px;
 }
 /* ==================== Footer - END ==================== */
