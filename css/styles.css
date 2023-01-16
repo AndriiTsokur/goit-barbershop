@@ -761,10 +761,6 @@ ul {
 .booking-form-message:focus::placeholder {
 	color: var(--color-contrast);
 }
-
-.booking-btn {
-	margin-inline: auto;
-}
 /* ================ Section Booking - END =============== */
 
 /* ============== Section Contacts - START ============== */
@@ -954,5 +950,9 @@ a.address-text {
 
 .modal-form-input {
 	flex-basis: 100%;
+}
+
+.modal-btn {
+	margin-inline: auto;
 }
 /* ===================== Modal - END ==================== */
