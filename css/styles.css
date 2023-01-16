@@ -885,6 +885,7 @@ a.address-text {
 
 .is-frozen {
 	overflow: hidden;
+	scrollbar-gutter: stable;
 }
 
 .modal {
