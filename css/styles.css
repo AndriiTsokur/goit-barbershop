@@ -870,7 +870,7 @@ a.address-text {
 
 	background-color: rgba(0, 0, 0, 0.75);
 
-	transition: opacity 250ms, visibility 250ms;
+	transition: opacity 500ms, visibility 500ms;
 }
 
 .backdrop.is-hidden {
@@ -903,11 +903,11 @@ a.address-text {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 
-	transition: transform 1000ms;
+	transition: transform 500ms;
 }
 
 .backdrop.is-hidden > .modal {
-	transform: scale(0.01);
+	transform: scale(0.1);
 }
 
 .modal-close-btn {
