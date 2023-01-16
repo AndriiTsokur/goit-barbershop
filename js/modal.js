@@ -18,6 +18,6 @@
 
 	function toggleModal() {
 		refs.modal.classList.toggle('is-hidden');
-		// document.querySelector('html').classList.toggle('is-frozen');
+		document.querySelector('html').classList.toggle('is-frozen');
 	}
 })();

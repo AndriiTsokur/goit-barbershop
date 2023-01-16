@@ -883,7 +883,7 @@ a.address-text {
 	pointer-events: none;
 }
 
-html:has(.backdrop:not(.is-hidden)) {
+.is-frozen {
 	overflow: hidden;
 }
 
