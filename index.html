@@ -60,7 +60,7 @@
 				<a class="header-link header-phone comp-link-behaviour nounderline" href="tel:+380441111111"
 					>+38 044 111 11 11</a
 				>
-				<button class="comp-btn btn-light" type="button">Online-booking</button>
+				<button class="comp-btn btn-light" data-modal-open type="button">Online-booking</button>
 			</div>
 		</header>
 
@@ -145,7 +145,7 @@
 							are a team that is always "on the same wave" with clients. Therefore, we are always
 							ready to improve everyone who comes to us!
 						</p>
-						<button class="comp-btn btn-dark" type="button">Online-booking</button>
+						<button class="comp-btn btn-dark" data-modal-open type="button">Online-booking</button>
 					</div>
 				</div>
 			</section>
@@ -196,7 +196,9 @@
 						</ul>
 					</div>
 
-					<button class="comp-btn btn-light prices-btn" type="button">Online-booking</button>
+					<button class="comp-btn btn-light prices-btn" data-modal-open type="button">
+						Online-booking
+					</button>
 				</div>
 			</section>
 
@@ -454,11 +456,30 @@
 					<!-- Section Online Booking -->
 					<section class="booking">
 						<h2 class="comp-section-heading heading-light booking-heading">Online-booking</h2>
-
-						<input type="text" placeholder="Name*" />
-						<input type="text" placeholder="Phone*" />
-						<input type="text" placeholder="Message" />
-						<button class="comp-btn btn-light booking-btn" type="submit">send</button>
+						<form class="booking-form" action="javascript:void(0);">
+							<input
+								class="booking-form-input"
+								name="user_name"
+								type="text"
+								placeholder="Name*"
+								autocomplete="on"
+								required
+							/>
+							<input
+								class="booking-form-input"
+								name="user_tel"
+								type="tel"
+								placeholder="Phone*"
+								autocomplete="on"
+								required
+							/>
+							<textarea
+								class="booking-form-message"
+								name="user_msg"
+								placeholder="Message"
+							></textarea>
+							<button class="comp-btn btn-light booking-btn" type="submit">send</button>
+						</form>
 					</section>
 
 					<!-- Section Contacts -->
@@ -541,5 +562,43 @@
 				</ul>
 			</div>
 		</footer>
+
+		<!-- Modal Section -->
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="modal-close-btn" data-modal-close type="button">
+					<svg class="modal-close-icon" width="8" height="8">
+						<use href="./images/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+
+				<p class="comp-section-subtitle subtitle-light modal-title centered-text">
+					Make a booking and we will call you back
+				</p>
+
+				<form class="modal-form" action="javascript:void(0);">
+					<input
+						class="booking-form-input modal-form-input"
+						name="user_name"
+						type="text"
+						placeholder="Name*"
+						autocomplete="on"
+						required
+					/>
+					<input
+						class="booking-form-input modal-form-input"
+						name="user_tel"
+						type="tel"
+						placeholder="Phone*"
+						autocomplete="on"
+						required
+					/>
+					<textarea class="booking-form-message" name="user_msg" placeholder="Message"></textarea>
+					<button class="comp-btn btn-light booking-btn" type="submit">send</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="./js/modal.js"></script>
 	</body>
 </html>

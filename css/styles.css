@@ -696,8 +696,74 @@ ul {
 	margin-bottom: 44px;
 }
 
+.booking-form {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 30px;
+}
+
+.booking-form-input {
+	flex-basis: calc((100% - 30px) / 2);
+	height: 24px;
+	margin-bottom: 44px;
+	padding: 0 0 8px 0;
+
+	color: var(--color-contrast);
+	letter-spacing: 0.1em;
+
+	outline: none;
+	border: none;
+	border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+	background-color: transparent;
+
+	transition: color 250ms, border-color 250ms;
+}
+
+.booking-form-message {
+	width: 100%;
+	height: 76px;
+	margin-bottom: 44px;
+	padding: 0;
+
+	color: var(--color-contrast);
+	letter-spacing: 0.1em;
+
+	outline: none;
+	border: none;
+	border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+	background-color: transparent;
+
+	transition: color 250ms, border-color 250ms;
+	resize: none;
+}
+
+.booking-form-input:focus,
+.booking-form-message:focus {
+	color: var(--color-contrast);
+
+	border-color: var(--color-contrast);
+}
+
+.booking-form-input::placeholder,
+.booking-form-message::placeholder {
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	color: rgba(157, 164, 189, 0.4);
+
+	transition: color 250ms;
+}
+
+.booking-form-input:focus::placeholder,
+.booking-form-message:focus::placeholder {
+	color: var(--color-contrast);
+}
+
 .booking-btn {
-	margin-top: 44px;
+	margin-inline: auto;
 }
 /* ================ Section Booking - END =============== */
 
@@ -795,3 +861,98 @@ a.address-text {
 	margin-right: 40px;
 }
 /* ==================== Footer - END ==================== */
+
+/* ==================== Modal - START =================== */
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.75);
+
+	transition: opacity 250ms, visibility 250ms;
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+html:has(.backdrop:not(.is-hidden)) {
+	overflow: hidden;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transform-origin: top left;
+	overflow: auto;
+
+	width: 408px;
+	min-height: 500px;
+	padding-top: 72px;
+	padding-bottom: 24px;
+	padding-inline: 24px;
+
+	border: 1px solid var(--color-secondary);
+	border-radius: 8px;
+	background-color: var(--bg-dark);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+
+	transition: transform 1000ms;
+}
+
+.backdrop.is-hidden > .modal {
+	transform: scale(0.01);
+}
+
+.modal-close-btn {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	padding: 0;
+
+	border: 1px solid var(--color-accent);
+	border-radius: 50%;
+	background-color: transparent;
+
+	cursor: pointer;
+	transition: background-color 250ms;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+	background-color: var(--color-accent);
+}
+
+.modal-close-icon {
+	fill: var(--color-contrast);
+}
+
+.modal-title {
+	margin-bottom: 44px;
+}
+
+.modal-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-form-input {
+	flex-basis: 100%;
+}
+/* ===================== Modal - END ==================== */
