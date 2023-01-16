@@ -22,6 +22,10 @@ body {
 	background-color: var(--color-contrast);
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 img {
 	display: block;
 	max-width: 100%;
