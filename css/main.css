@@ -1,0 +1,229 @@
+address {
+  font-style: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #303030;
+  background-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-block: 0;
+}
+
+p {
+  margin-block: 0;
+  letter-spacing: 0.02em;
+}
+
+ul {
+  margin-block: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.gallery__heading {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.gallery {
+  max-width: 480px;
+  margin-inline: auto;
+  padding-block: 84px;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    max-width: 768px;
+    padding-block: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    max-width: 1200px;
+    padding-block: 120px;
+  }
+}
+
+.gallery__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 319px) {
+  .gallery__intro {
+    font-size: 10px;
+  }
+}
+
+.container {
+  max-width: 448px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.hero-media-list::before,
+.gallery__intro::before,
+.footer-media-list::before {
+  content: "";
+  /* display: inline-block; */
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: currentColor;
+}
+
+/* Temporary BLACK Background class */
+.black-bg {
+  background-color: black;
+}
+
+.comp-btn {
+  min-width: 160px;
+  height: 40px;
+  padding-block: 12px;
+  padding-inline: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-accent);
+  border-radius: 25px;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: color 250ms, background-color 250ms;
+  transition: color 250ms, background-color 250ms;
+}
+
+.comp-btn:hover,
+.comp-btn:focus {
+  color: var(--color-contrast);
+  background-color: var(--color-accent);
+}
+
+/* BUTTON Light Text Theme */
+.btn-light {
+  color: var(--color-contrast);
+}
+
+/* BUTTON Dark Text Theme */
+.btn-dark {
+  color: var(--color-main);
+}
+
+.comp-media-link {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--color-main);
+}
+
+/* Section INTRO Light Text Color Theme */
+.intro-light {
+  color: var(--color-secondaryMod);
+}
+
+.comp-section-heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+/* Section HEADING Light Text Color Theme */
+.heading-light {
+  color: var(--color-contrast);
+}
+
+.comp-section-subtitle {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  color: var(--color-text);
+}
+
+/* Section SUBTITLE Light Text Color Theme */
+.subtitle-light {
+  color: var(--color-secondary);
+}
+
+.gallery__intro {
+  margin-bottom: 71px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__intro {
+    margin-bottom: 44px;
+  }
+}
+
+.gallery__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery__item {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,30 @@
+// Переменные задаются $имя_переменной: значение. Вызываются свойство_селектора: $имя_переменной
+
+// @import './base/normalize';
+@import './utils/variables';
+@import './utils/reset-defaults';
+@import './utils/placeholders-general';
+@import './utils/placeholders-section';
+// @import './utils/mixins';
+@import './components/shared-general';
+@import './components/shared-button';
+@import './components/shared-media';
+@import './components/shared-section';
+
+@import './components/page-header';
+@import './components/section-gallery';
+
+// .features {
+// 	@extend %list;
+// }
+
+// Placeholders служат для формирования модификаторов уже имеющихся селекторов:
+// %notification { <- описание базового шаблонного селектора
+// 	background-color: grey;
+// 	font-style: 20px;
+// 	padding: 20px;
+// }
+// .notification--error {
+// 	@extend %notification; <- базовый шаблонный селектор
+// 	background-color: red;
+// }

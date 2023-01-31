@@ -1,0 +1,31 @@
+%comp-section {
+	max-width: 480px;
+	margin-inline: auto;
+	padding-block: 84px;
+
+	@media screen and (min-width: 768px) {
+		max-width: 768px;
+		padding-block: 100px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		max-width: 1200px;
+		padding-block: 120px;
+	}
+}
+
+%comp-section__intro {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.36;
+	letter-spacing: normal;
+	text-transform: uppercase;
+
+	@media screen and (max-width: 319px) {
+		font-size: 10px;
+	}
+}

@@ -1,0 +1,48 @@
+// .comp-section {
+// 	max-width: 1600px;
+// 	margin-inline: auto;
+// 	padding-block: 120px;
+// }
+
+// .comp-section-intro {
+// 	display: flex;
+// 	align-items: center;
+// 	margin-bottom: 20px;
+
+// 	font-size: 11px;
+// 	font-weight: 600;
+// 	line-height: 1.36;
+// 	letter-spacing: normal;
+// 	text-transform: uppercase;
+// }
+
+/* Section INTRO Light Text Color Theme */
+.intro-light {
+	color: var(--color-secondaryMod);
+}
+
+.comp-section-heading {
+	font-family: 'Raleway', sans-serif;
+	font-size: 42px;
+	line-height: 1.17;
+	letter-spacing: 0.05em;
+}
+
+/* Section HEADING Light Text Color Theme */
+.heading-light {
+	color: var(--color-contrast);
+}
+
+.comp-section-subtitle {
+	margin-bottom: 20px;
+
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.67;
+	color: var(--color-text);
+}
+
+/* Section SUBTITLE Light Text Color Theme */
+.subtitle-light {
+	color: var(--color-secondary);
+}
