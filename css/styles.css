@@ -511,35 +511,35 @@ ul {
 /* =========== Section Services & Prices - END ========== */
 
 /* ============== Section Our Facts - START ============= */
-.facts > .container {
+/* .facts > .container {
 	padding-left: 115px;
 	gap: 130px;
-}
+} */
 
-.facts-list {
+/* .facts-list {
 	flex-wrap: wrap;
 	width: 370px;
-}
+} */
 
-.facts-item {
+/* .facts-item {
 	width: 170px;
 	padding-block: 20px;
 	padding-inline: 24px;
 
 	text-align: center;
 	background-color: var(--bg-light);
-}
+} */
 
-.facts-item:nth-child(odd) {
+/* .facts-item:nth-child(odd) {
 	margin-right: 30px;
 	margin-bottom: 30px;
 }
 
 .facts-item:nth-child(even) {
 	margin-top: 30px;
-}
+} */
 
-.facts-number {
+/* .facts-number {
 	display: flex;
 	justify-content: center;
 
@@ -548,9 +548,9 @@ ul {
 	font-weight: 700;
 	line-height: 1.36;
 	letter-spacing: 0.05em;
-}
+} */
 
-.facts-number::after {
+/* .facts-number::after {
 	content: '+';
 	margin-left: 2px;
 	padding-top: 7px;
@@ -559,25 +559,25 @@ ul {
 	font-weight: 600;
 	line-height: 1.38;
 	color: var(--color-accent);
-}
+} */
 
-.facts-description {
+/* .facts-description {
 	margin-top: 6px;
 
 	font-size: 11px;
 	font-weight: 600;
 	line-height: 1.36;
 	letter-spacing: normal;
-}
+} */
 
-.facts-content {
+/* .facts-content {
 	max-width: 500px;
-}
+} */
 
-.facts-heading {
+/* .facts-heading {
 	max-width: 430px;
 	margin-bottom: 20px;
-}
+} */
 /* =============== Section Our Facts - END ============== */
 
 /* ============= Section Our Barbers - START ============ */
