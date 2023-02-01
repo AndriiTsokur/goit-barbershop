@@ -240,63 +240,100 @@
 			</section> -->
 
 			<!-- Section Our Barbers -->
-			<!-- <section id="barbers" class="comp-section barbers">
+			<section id="barbers" class="barbers">
 				<div class="container">
-					<p class="comp-section-intro">For true enjoyers of the atmosphere</p>
-					<h2 class="comp-section-heading barbers-heading">Our barbers</h2>
+					<p class="barbers__intro">For true enjoyers of the atmosphere</p>
+					<h2 class="barbers__heading comp-section-heading">Our barbers</h2>
 
-					<ul class="barbers-list flex">
-						<li class="barbers-item nobullet">
-							<img
-								src="./images/barber_01.jpg"
-								width="370"
-								height="346"
-								alt="Photo of barber John Smith at work"
-							/>
-							<div class="barbers-item-content">
-								<h3 class="barbers-item-heading">John Smith</h3>
-								<p class="barbers-item-description">Extreme Barber</p>
-								<ul class="barbers-media-list flex">
-									<li class="nobullet">
+					<ul class="barbers__list">
+						<li class="barbers-card">
+							<picture>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/barber__mobile-01.webp 1x, ./images/barber__mobile-01@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/barber__mobile-01.jpg 1x, ./images/barber__mobile-01@2x.jpg 2x"
+									type="image/jpeg"
+								/>
+
+								<source
+									media="(max-width: 1199px)"
+									srcset="./images/barber__tablet-01.webp 1x, ./images/barber__tablet-01@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 1199px)"
+									srcset="./images/barber__tablet-01.jpg 1x, ./images/barber__tablet-01@2x.jpg 2x"
+									type="image/jpeg"
+								/>
+
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+										./images/barber__desktop-01.webp    1x,
+										./images/barber__desktop-01@2x.webp 2x
+									"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/barber__desktop-01.jpg 1x, ./images/barber__desktop-01@2x.jpg 2x"
+									type="image/jpeg"
+								/>
+
+								<img
+									src="./images/barber__tablet-01.jpg"
+									height="346"
+									alt="Photo of barber John Smith at work"
+								/>
+							</picture>
+							<div class="barbers-card__content">
+								<h3 class="barbers-card__heading">John Smith</h3>
+								<p class="barbers-card__description">Extreme Barber</p>
+								<ul class="barbers-media__list">
+									<li>
 										<a
-											class="barbers-media-link"
+											class="barbers-media__link"
 											href="#"
 											aria-label="Link to barber's Instagram profile"
 										>
-											<svg class="barbers-media-icon">
+											<svg class="barbers-media__icon">
 												<use href="./images/icons.svg#icon-instagram"></use>
 											</svg>
 										</a>
 									</li>
-									<li class="nobullet">
+									<li>
 										<a
-											class="barbers-media-link"
+											class="barbers-media__link"
 											href="#"
 											aria-label="Link to barber's Twitter profile"
 										>
-											<svg class="barbers-media-icon">
+											<svg class="barbers-media__icon">
 												<use href="./images/icons.svg#icon-twitter"></use>
 											</svg>
 										</a>
 									</li>
-									<li class="nobullet">
+									<li>
 										<a
-											class="barbers-media-link"
+											class="barbers-media__link"
 											href="#"
 											aria-label="Link to barber's Facebook profile"
 										>
-											<svg class="barbers-media-icon">
+											<svg class="barbers-media__icon">
 												<use href="./images/icons.svg#icon-facebook"></use>
 											</svg>
 										</a>
 									</li>
-									<li class="nobullet">
+									<li>
 										<a
-											class="barbers-media-link"
+											class="barbers-media__link"
 											href="#"
 											aria-label="Link to barber's LinkedIn profile"
 										>
-											<svg class="barbers-media-icon">
+											<svg class="barbers-media__icon">
 												<use href="./images/icons.svg#icon-linkedin"></use>
 											</svg>
 										</a>
@@ -305,57 +342,94 @@
 							</div>
 						</li>
 
-						<li class="barbers-item nobullet">
-							<img
-								src="./images/barber_02.jpg"
-								width="370"
-								height="346"
-								alt="Photo of barber Michele Doe at work"
-							/>
-							<div class="barbers-item-content">
-								<h3 class="barbers-item-heading">Michele Doe</h3>
-								<p class="barbers-item-description">Extreme Barber</p>
-								<ul class="barbers-media-list flex">
-									<li class="nobullet">
+						<li class="barbers-card">
+							<picture>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/barber__mobile-02.webp 1x, ./images/barber__mobile-02@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/barber__mobile-02.jpg 1x, ./images/barber__mobile-02@2x.jpg 2x"
+									type="image/jpeg"
+								/>
+
+								<source
+									media="(max-width: 1199px)"
+									srcset="./images/barber__tablet-02.webp 1x, ./images/barber__tablet-02@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 1199px)"
+									srcset="./images/barber__tablet-02.jpg 1x, ./images/barber__tablet-02@2x.jpg 2x"
+									type="image/jpeg"
+								/>
+
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+										./images/barber__desktop-02.webp    1x,
+										./images/barber__desktop-02@2x.webp 2x
+									"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/barber__desktop-02.jpg 1x, ./images/barber__desktop-02@2x.jpg 2x"
+									type="image/jpeg"
+								/>
+
+								<img
+									src="./images/barber__tablet-02.jpg"
+									height="346"
+									alt="Photo of barber Michele Doe at work"
+								/>
+							</picture>
+							<div class="barbers-card__content">
+								<h3 class="barbers-card__heading">Michele Doe</h3>
+								<p class="barbers-card__description">Extreme Barber</p>
+								<ul class="barbers-media__list">
+									<li>
 										<a
-											class="barbers-media-link"
+											class="barbers-media__link"
 											href="#"
 											aria-label="Link to barber's Instagram profile"
 										>
-											<svg class="barbers-media-icon">
+											<svg class="barbers-media__icon">
 												<use href="./images/icons.svg#icon-instagram"></use>
 											</svg>
 										</a>
 									</li>
-									<li class="nobullet">
+									<li>
 										<a
-											class="barbers-media-link"
+											class="barbers-media__link"
 											href="#"
 											aria-label="Link to barber's Twitter profile"
 										>
-											<svg class="barbers-media-icon">
+											<svg class="barbers-media__icon">
 												<use href="./images/icons.svg#icon-twitter"></use>
 											</svg>
 										</a>
 									</li>
-									<li class="nobullet">
+									<li>
 										<a
-											class="barbers-media-link"
+											class="barbers-media__link"
 											href="#"
 											aria-label="Link to barber's Facebook profile"
 										>
-											<svg class="barbers-media-icon">
+											<svg class="barbers-media__icon">
 												<use href="./images/icons.svg#icon-facebook"></use>
 											</svg>
 										</a>
 									</li>
-									<li class="nobullet">
+									<li>
 										<a
-											class="barbers-media-link"
+											class="barbers-media__link"
 											href="#"
 											aria-label="Link to barber's LinkedIn profile"
 										>
-											<svg class="barbers-media-icon">
+											<svg class="barbers-media__icon">
 												<use href="./images/icons.svg#icon-linkedin"></use>
 											</svg>
 										</a>
@@ -364,57 +438,94 @@
 							</div>
 						</li>
 
-						<li class="barbers-item nobullet">
-							<img
-								src="./images/barber_03.jpg"
-								width="370"
-								height="346"
-								alt="Photo of barber Alan Black at work"
-							/>
-							<div class="barbers-item-content">
-								<h3 class="barbers-item-heading">Alan Black</h3>
-								<p class="barbers-item-description">Extreme Barber</p>
-								<ul class="barbers-media-list flex">
-									<li class="nobullet">
+						<li class="barbers-card">
+							<picture>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/barber__mobile-03.webp 1x, ./images/barber__mobile-03@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="./images/barber__mobile-03.jpg 1x, ./images/barber__mobile-03@2x.jpg 2x"
+									type="image/jpeg"
+								/>
+
+								<source
+									media="(max-width: 1199px)"
+									srcset="./images/barber__tablet-03.webp 1x, ./images/barber__tablet-03@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 1199px)"
+									srcset="./images/barber__tablet-03.jpg 1x, ./images/barber__tablet-03@2x.jpg 2x"
+									type="image/jpeg"
+								/>
+
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+										./images/barber__desktop-03.webp    1x,
+										./images/barber__desktop-03@2x.webp 2x
+									"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/barber__desktop-03.jpg 1x, ./images/barber__desktop-03@2x.jpg 2x"
+									type="image/jpeg"
+								/>
+
+								<img
+									src="./images/barber__tablet-03.jpg"
+									height="346"
+									alt="Photo of barber Alan Black at work"
+								/>
+							</picture>
+							<div class="barbers-card__content">
+								<h3 class="barbers-card__heading">Alan Black</h3>
+								<p class="barbers-card__description">Extreme Barber</p>
+								<ul class="barbers-media__list">
+									<li>
 										<a
-											class="barbers-media-link"
+											class="barbers-media__link"
 											href="#"
 											aria-label="Link to barber's Instagram profile"
 										>
-											<svg class="barbers-media-icon">
+											<svg class="barbers-media__icon">
 												<use href="./images/icons.svg#icon-instagram"></use>
 											</svg>
 										</a>
 									</li>
-									<li class="nobullet">
+									<li>
 										<a
-											class="barbers-media-link"
+											class="barbers-media__link"
 											href="#"
 											aria-label="Link to barber's Twitter profile"
 										>
-											<svg class="barbers-media-icon">
+											<svg class="barbers-media__icon">
 												<use href="./images/icons.svg#icon-twitter"></use>
 											</svg>
 										</a>
 									</li>
-									<li class="nobullet">
+									<li>
 										<a
-											class="barbers-media-link"
+											class="barbers-media__link"
 											href="#"
 											aria-label="Link to barber's Facebook profile"
 										>
-											<svg class="barbers-media-icon">
+											<svg class="barbers-media__icon">
 												<use href="./images/icons.svg#icon-facebook"></use>
 											</svg>
 										</a>
 									</li>
-									<li class="nobullet">
+									<li>
 										<a
-											class="barbers-media-link"
+											class="barbers-media__link"
 											href="#"
 											aria-label="Link to barber's LinkedIn profile"
 										>
-											<svg class="barbers-media-icon">
+											<svg class="barbers-media__icon">
 												<use href="./images/icons.svg#icon-linkedin"></use>
 											</svg>
 										</a>
@@ -424,7 +535,7 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- Section Our Gallery -->
 			<section class="gallery">
@@ -480,7 +591,7 @@
 									type="image/jpeg"
 								/>
 
-								<img src="./images/gallery__mobile-01.jpg" alt="Gallery Photo 1" />
+								<img src="./images/gallery__mobile-01.jpg" height="360" alt="Gallery Photo 1" />
 							</picture>
 						</li>
 
@@ -531,7 +642,7 @@
 									type="image/jpeg"
 								/>
 
-								<img src="./images/gallery__mobile-02.jpg" alt="Gallery Photo 2" />
+								<img src="./images/gallery__mobile-02.jpg" height="360" alt="Gallery Photo 2" />
 							</picture>
 						</li>
 
@@ -582,7 +693,7 @@
 									type="image/jpeg"
 								/>
 
-								<img src="./images/gallery__mobile-03.jpg" alt="Gallery Photo 3" />
+								<img src="./images/gallery__mobile-03.jpg" height="360" alt="Gallery Photo 3" />
 							</picture>
 						</li>
 
@@ -633,7 +744,7 @@
 									type="image/jpeg"
 								/>
 
-								<img src="./images/gallery__mobile-04.jpg" alt="Gallery Photo 4" />
+								<img src="./images/gallery__mobile-04.jpg" height="360" alt="Gallery Photo 4" />
 							</picture>
 						</li>
 					</ul>

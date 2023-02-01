@@ -65,6 +65,11 @@
 	background-color: currentColor;
 }
 
+/* For EMERGENCIES (default image from the img tag) */
+picture img {
+	object-fit: cover;
+}
+
 /* Temporary BLACK Background class */
 .black-bg {
 	background-color: black;
