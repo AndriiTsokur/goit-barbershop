@@ -23,6 +23,10 @@
 	letter-spacing: normal;
 	text-transform: uppercase;
 
+	&--light {
+		color: $COLOR_SECONDARY_MOD;
+	}
+
 	@media screen and (max-width: 334px) {
 		font-size: 10px;
 	}
@@ -35,6 +39,10 @@
 	font-size: 42px;
 	line-height: 1.17;
 	letter-spacing: 0.05em;
+
+	&--light {
+		color: $COLOR_CONTRAST;
+	}
 }
 
 %comp-section__subtitle {

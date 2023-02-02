@@ -50,23 +50,23 @@ ul {
   overflow: hidden;
 }
 
-.gallery, .barbers, .facts {
+.gallery, .barbers, .facts, .prices {
   max-width: 1600px;
   margin-inline: auto;
   padding-block: 84px;
 }
 @media screen and (min-width: 768px) {
-  .gallery, .barbers, .facts {
+  .gallery, .barbers, .facts, .prices {
     padding-block: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .gallery, .barbers, .facts {
+  .gallery, .barbers, .facts, .prices {
     padding-block: 120px;
   }
 }
 
-.gallery__intro, .barbers__intro, .facts__intro {
+.gallery__intro, .barbers__intro, .facts__intro, .prices__intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,18 +80,24 @@ ul {
   letter-spacing: normal;
   text-transform: uppercase;
 }
+.prices__intro {
+  color: rgba(157, 164, 189, 0.6);
+}
 @media screen and (max-width: 334px) {
-  .gallery__intro, .barbers__intro, .facts__intro {
+  .gallery__intro, .barbers__intro, .facts__intro, .prices__intro {
     font-size: 10px;
   }
 }
 
-.barbers__heading, .facts__heading {
+.barbers__heading, .facts__heading, .prices__heading {
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
+}
+.prices__heading {
+  color: #ffffff;
 }
 
 .facts__subtitle {
@@ -102,6 +108,32 @@ ul {
   color: #555555;
 }
 
+.prices__btn {
+  min-width: 160px;
+  height: 40px;
+  padding-block: 12px;
+  padding-inline: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: color 250ms, background-color 250ms;
+  transition: color 250ms, background-color 250ms;
+  /* BUTTON Light Text Theme */
+  /* BUTTON Dark Text Theme */
+}
+.prices__btn:hover, .prices__btn:focus {
+  color: #ffffff;
+  background-color: #ff6c00;
+}
+.prices__btn {
+  color: #ffffff;
+}
 .container {
   max-width: 448px;
   margin-inline: auto;
@@ -122,6 +154,7 @@ ul {
 .gallery__intro::before,
 .barbers__intro::before,
 .facts__intro::before,
+.prices__intro::before,
 .footer-media-list::before {
   content: "";
   /* display: inline-block; */
@@ -142,40 +175,6 @@ picture img {
   background-color: black;
 }
 
-.comp-btn {
-  min-width: 160px;
-  height: 40px;
-  padding-block: 12px;
-  padding-inline: 20px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  border: 1px solid var(--color-accent);
-  border-radius: 25px;
-  background: transparent;
-  cursor: pointer;
-  -webkit-transition: color 250ms, background-color 250ms;
-  transition: color 250ms, background-color 250ms;
-}
-
-.comp-btn:hover,
-.comp-btn:focus {
-  color: var(--color-contrast);
-  background-color: var(--color-accent);
-}
-
-/* BUTTON Light Text Theme */
-.btn-light {
-  color: var(--color-contrast);
-}
-
-/* BUTTON Dark Text Theme */
-.btn-dark {
-  color: var(--color-main);
-}
-
 .comp-media-link {
   display: block;
   font-size: 11px;
@@ -186,18 +185,182 @@ picture img {
 }
 
 /* Section INTRO Light Text Color Theme */
-.intro-light {
-  color: var(--color-secondaryMod);
-}
-
 /* Section HEADING Light Text Color Theme */
-.heading-light {
-  color: var(--color-contrast);
-}
-
 /* Section SUBTITLE Light Text Color Theme */
 .subtitle-light {
   color: var(--color-secondary);
+}
+
+.prices {
+  background-color: #111319;
+  background-image: url(../images/bg-prices__mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/bg-prices__mobile@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .prices {
+    background-image: url(../images/bg-prices__tablet.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/bg-prices__tablet@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .prices {
+    background-image: url(../images/bg-prices__desktop.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/bg-prices__desktop@2x.png);
+  }
+}
+
+.prices__heading {
+  margin-bottom: 44px;
+}
+@media screen and (max-width: 767px) {
+  .prices__heading {
+    font-size: 40px;
+    line-height: 1.18;
+  }
+}
+
+.prices__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 44px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+@media screen and (min-width: 1200px) {
+  .prices__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+    background-image: none;
+  }
+}
+
+.prices__list {
+  padding-inline: 20px 20px;
+}
+.prices__list:first-child {
+  margin-bottom: 20px;
+  padding-block: 30px 0;
+}
+@media screen and (min-width: 1200px) {
+  .prices__list:first-child {
+    margin-bottom: 0;
+  }
+}
+.prices__list:last-child {
+  padding-block: 0 30px;
+}
+@media screen and (min-width: 425px) {
+  .prices__list {
+    padding-inline: 40px 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .prices__list {
+    padding-inline: 40px;
+  }
+  .prices__list:first-child {
+    padding-block: 32px 0;
+  }
+  .prices__list:last-child {
+    padding-block: 0 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .prices__list {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    padding-inline: 20px;
+  }
+  .prices__list:first-child {
+    padding-block: 30px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  .prices__list:last-child {
+    padding-block: 30px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
+    background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+}
+
+.prices__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 4px;
+}
+.prices__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.prices__item::before {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+@media screen and (min-width: 768px) {
+  .prices__item {
+    gap: 12px;
+  }
+}
+
+.prices__text {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.43;
+  color: #9da4bd;
+}
+.prices__text:first-child {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+@media screen and (min-width: 375px) {
+  .prices__text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .prices__text {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.prices__btn {
+  display: block;
+  margin-inline: auto;
 }
 
 .facts > .container {

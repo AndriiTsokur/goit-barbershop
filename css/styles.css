@@ -444,70 +444,70 @@ ul {
 /* ================= Section About - END ================ */
 
 /* ========== Section Services & Prices - START ========= */
-.prices {
+/* .prices {
 	background-color: #111319;
 	background-image: url(../images/bg-prices.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-}
+} */
 
-.prices-heading {
+/* .prices-heading {
 	margin-bottom: 44px;
-}
+} */
 
-.prices-content {
+/* .prices-content {
 	gap: 30px;
 	margin-bottom: 44px;
-}
+} */
 
-.prices-list {
+/* .prices-list {
 	flex-basis: calc((100% - 30px) / 2);
 	padding: 30px 20px 30px 20px;
 	gap: 30px;
-}
+} */
 
-.prices-list:first-child {
+/* .prices-list:first-child {
 	background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .prices-list:last-child {
 	background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
+} */
 
-.prices-item {
+/* .prices-item {
 	gap: 12px;
 	justify-content: space-between;
 	align-items: baseline;
-}
+} */
 
-.prices-item:not(:last-child) {
+/* .prices-item:not(:last-child) {
 	margin-bottom: 20px;
-}
+} */
 
-.prices-item::before {
+/* .prices-item::before {
 	content: '';
 	flex-grow: 1;
 	height: 1px;
 
 	background-color: rgba(157, 164, 189, 0.12);
-}
+} */
 
-.prices-item-text {
+/* .prices-item-text {
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.67;
 	color: var(--color-secondary);
-}
+} */
 
-.prices-item-text:first-child {
+/* .prices-item-text:first-child {
 	order: -1;
-}
+} */
 
-.prices-btn {
+/* .prices-btn {
 	display: block;
 	margin-inline: auto;
-}
+} */
 /* =========== Section Services & Prices - END ========== */
 
 /* ============== Section Our Facts - START ============= */

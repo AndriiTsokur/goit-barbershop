@@ -1,4 +1,4 @@
-.comp-btn {
+%comp-btn {
 	min-width: 160px;
 	height: 40px;
 	padding-block: 12px;
@@ -10,27 +10,27 @@
 	letter-spacing: 0.09em;
 	text-transform: uppercase;
 
-	border: 1px solid var(--color-accent);
+	border: 1px solid $COLOR_ACCENT;
 	border-radius: 25px;
 	background: transparent;
 
 	cursor: pointer;
 	transition: color 250ms, background-color 250ms;
-}
 
-.comp-btn:hover,
-.comp-btn:focus {
-	color: var(--color-contrast);
+	&:hover,
+	&:focus {
+		color: $COLOR_CONTRAST;
 
-	background-color: var(--color-accent);
-}
+		background-color: $COLOR_ACCENT;
+	}
 
-/* BUTTON Light Text Theme */
-.btn-light {
-	color: var(--color-contrast);
-}
+	/* BUTTON Light Text Theme */
+	&--light {
+		color: $COLOR_CONTRAST;
+	}
 
-/* BUTTON Dark Text Theme */
-.btn-dark {
-	color: var(--color-main);
+	/* BUTTON Dark Text Theme */
+	&--dark {
+		color: $COLOR_MAIN;
+	}
 }
