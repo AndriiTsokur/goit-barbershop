@@ -113,43 +113,83 @@
 			</section> -->
 
 			<!-- Section About -->
-			<!-- <section id="about" class="comp-section">
-				<div class="container flex">
-					<ul class="about-list flex">
-						<li class="about-item nobullet">
-							<img
-								src="./images/about_01.jpg"
-								width="270"
-								height="445"
-								alt="Barber shaves a client"
-							/>
+			<section id="about" class="about">
+				<div class="container">
+					<ul class="about__list">
+						<li class="about__item">
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/about__desktop-01.webp 1x, ./images/about__desktop-01@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/about__desktop-01.jpg 1x, ./images/about__desktop-01@2x.jpg 2x"
+									type="image/jpeg"
+								/>
+
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/about__tablet-01.webp 1x, ./images/about__tablet-01@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/about__tablet-01.jpg 1x, ./images/about__tablet-01@2x.jpg 2x"
+									type="image/jpeg"
+								/>
+
+								<img src="./images/about__tablet-01.jpg" alt="Barber shaves a client" />
+							</picture>
 						</li>
-						<li class="about-item nobullet">
-							<img
-								src="./images/about_02.jpg"
-								width="270"
-								height="445"
-								alt="Barber cuts the client's hair"
-							/>
+						<li class="about__item">
+							<picture>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/about__desktop-02.webp 1x, ./images/about__desktop-02@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./images/about__desktop-02.jpg 1x, ./images/about__desktop-02@2x.jpg 2x"
+									type="image/jpeg"
+								/>
+
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/about__tablet-02.webp 1x, ./images/about__tablet-02@2x.webp 2x"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="./images/about__tablet-02.jpg 1x, ./images/about__tablet-02@2x.jpg 2x"
+									type="image/jpeg"
+								/>
+
+								<img src="./images/about__tablet-02.jpg" alt="Barber cuts the client's hair" />
+							</picture>
 						</li>
 					</ul>
 
-					<div class="about-content">
-						<p class="comp-section-intro">About</p>
-						<h2 class="comp-section-heading about-heading">Best Barbershop in your city</h2>
-						<p class="comp-section-subtitle">
-							If you want to add more confidence to your image, you should definitely visit us.
-						</p>
-						<p class="about-text">
-							We are a team that never stops at what has been achieved and are thirsty for changes.
-							And when you fall into the hands of our master, you will never be the same again. We
-							are a team that is always "on the same wave" with clients. Therefore, we are always
-							ready to improve everyone who comes to us!
-						</p>
-						<button class="comp-btn btn-dark" data-modal-open type="button">Online-booking</button>
+					<div class="about__content">
+						<div class="about__wrapper">
+							<p class="about__intro">About</p>
+							<h2 class="about__heading">Best Barbershop in your city</h2>
+							<p class="about__subtitle">
+								If you want to add more confidence to your image, you should definitely visit us.
+							</p>
+							<p class="about__text">
+								We are a team that never stops at what has been achieved and are thirsty for
+								changes. And when you fall into the hands of our master, you will never be the same
+								again. We are a team that is always "on the same wave" with clients. Therefore, we
+								are always ready to improve everyone who comes to us!
+							</p>
+						</div>
+						<button class="about__btn" data-modal-open type="button">Online-booking</button>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- Section Services & Prices -->
 			<section id="prices" class="prices">

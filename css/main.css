@@ -50,23 +50,23 @@ ul {
   overflow: hidden;
 }
 
-.gallery, .barbers, .facts, .prices {
+.gallery, .barbers, .facts, .prices, .about {
   max-width: 1600px;
   margin-inline: auto;
   padding-block: 84px;
 }
 @media screen and (min-width: 768px) {
-  .gallery, .barbers, .facts, .prices {
+  .gallery, .barbers, .facts, .prices, .about {
     padding-block: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .gallery, .barbers, .facts, .prices {
+  .gallery, .barbers, .facts, .prices, .about {
     padding-block: 120px;
   }
 }
 
-.gallery__intro, .barbers__intro, .facts__intro, .prices__intro {
+.gallery__intro, .barbers__intro, .facts__intro, .prices__intro, .about__intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,12 +84,12 @@ ul {
   color: rgba(157, 164, 189, 0.6);
 }
 @media screen and (max-width: 334px) {
-  .gallery__intro, .barbers__intro, .facts__intro, .prices__intro {
+  .gallery__intro, .barbers__intro, .facts__intro, .prices__intro, .about__intro {
     font-size: 10px;
   }
 }
 
-.barbers__heading, .facts__heading, .prices__heading {
+.barbers__heading, .facts__heading, .prices__heading, .about__heading {
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-size: 42px;
@@ -100,7 +100,7 @@ ul {
   color: #ffffff;
 }
 
-.facts__subtitle {
+.facts__subtitle, .about__subtitle {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.67;
@@ -108,7 +108,7 @@ ul {
   color: #555555;
 }
 
-.prices__btn {
+.prices__btn, .about__btn {
   min-width: 160px;
   height: 40px;
   padding-block: 12px;
@@ -127,13 +127,17 @@ ul {
   /* BUTTON Light Text Theme */
   /* BUTTON Dark Text Theme */
 }
-.prices__btn:hover, .prices__btn:focus {
+.prices__btn:hover, .about__btn:hover, .prices__btn:focus, .about__btn:focus {
   color: #ffffff;
   background-color: #ff6c00;
 }
 .prices__btn {
   color: #ffffff;
 }
+.about__btn {
+  color: #303030;
+}
+
 .container {
   max-width: 448px;
   margin-inline: auto;
@@ -155,6 +159,7 @@ ul {
 .barbers__intro::before,
 .facts__intro::before,
 .prices__intro::before,
+.about__intro::before,
 .footer-media-list::before {
   content: "";
   /* display: inline-block; */
@@ -189,6 +194,104 @@ picture img {
 /* Section SUBTITLE Light Text Color Theme */
 .subtitle-light {
   color: var(--color-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .about > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.about__list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .about__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.about__item {
+  height: 235px;
+}
+@media screen and (min-width: 1200px) {
+  .about__item {
+    height: 445px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__content {
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about__wrapper {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about__heading {
+    max-width: 306px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .about__heading {
+    font-size: 28px;
+    line-height: 1.1785714286;
+  }
+}
+
+.about__subtitle {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .about__subtitle {
+    font-size: 16px;
+    line-height: 1.625;
+  }
+}
+
+.about__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8571428571;
+  color: #555555;
 }
 
 .prices {

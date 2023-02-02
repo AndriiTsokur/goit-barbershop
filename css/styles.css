@@ -416,31 +416,31 @@ ul {
 	...
 } */
 
-.about-list {
+/* .about-list {
 	margin-right: 30px;
 	gap: 30px;
-}
+} */
 
 /* .about-item {
 	...
 } */
 
-.about-content {
+/* .about-content {
 	max-width: 470px;
-}
+} */
 
-.about-heading {
+/* .about-heading {
 	margin-bottom: 20px;
-}
+} */
 
-.about-text {
+/* .about-text {
 	margin-bottom: 40px;
 
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.86;
 	color: var(--color-text);
-}
+} */
 /* ================= Section About - END ================ */
 
 /* ========== Section Services & Prices - START ========= */
