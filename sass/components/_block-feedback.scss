@@ -181,6 +181,12 @@
 		}
 	}
 
+	.contacts__wrapper {
+		@media screen and (min-width: 1200px) {
+			width: 255px;
+		}
+	}
+
 	.contacts__item:first-child > .contacts__text {
 		font-weight: 700;
 	}
@@ -242,6 +248,10 @@
 			div {
 				flex-basis: 50%;
 			}
+		}
+
+		.contacts__address {
+			padding-right: 90px;
 		}
 
 		.contacts__intro {

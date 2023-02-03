@@ -67,22 +67,22 @@
 
 		<main>
 			<!-- Section Hero -->
-			<!-- <section class="hero">
-				<div class="container flex">
-					<div class="hero-media-content">
-						<ul class="hero-media-list flex-vert-centered">
-							<li class="hero-media-item nobullet">
+			<section class="hero">
+				<div class="container">
+					<div class="hero__media-content">
+						<ul class="hero__media-list">
+							<li>
 								<a
-									class="comp-media-link comp-link-behaviour nounderline"
+									class="hero__media-link comp-media-link comp-link-behaviour nounderline"
 									href="https://www.instagram.com/"
 									target="_blank"
 									rel="noopener noreferrer nofollow"
 									>Instagram</a
 								>
 							</li>
-							<li class="hero-media-item nobullet">
+							<li>
 								<a
-									class="comp-media-link comp-link-behaviour nounderline"
+									class="hero__media-link comp-media-link comp-link-behaviour nounderline"
 									href="https://www.youtube.com/"
 									target="_blank"
 									rel="noopener noreferrer nofollow"
@@ -92,16 +92,16 @@
 						</ul>
 					</div>
 
-					<div class="hero-content">
-						<p class="comp-section-intro intro-light">A hair salon for men in Kyiv</p>
-						<h1 class="hero-heading">BarberShop</h1>
-						<p class="comp-section-subtitle subtitle-light hero-subtitle">
+					<div class="hero__content">
+						<p class="hero__intro">A hair salon for men in Kyiv</p>
+						<h1 class="hero__heading">BarberShop</h1>
+						<p class="hero__subtitle">
 							We are experts in trendy men’s haircuts.<br />
 							We work quickly, carefully and with style.
 						</p>
 					</div>
 
-					<ul class="hero-carousel-list flex">
+					<ul class="carousel__list flex">
 						<li class="hero-carousel-item nobullet">
 							<a class="hero-carousel-link nounderline" href="#">Back</a>
 						</li>
@@ -110,7 +110,7 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 
 			<!-- Section About -->
 			<section id="about" class="about">
@@ -824,7 +824,7 @@
 						<h2 class="contacts__heading">Contacts</h2>
 
 						<div class="contacts__wrapper">
-							<address>
+							<address class="contacts__address">
 								<ul>
 									<li class="contacts__item">
 										<a
@@ -836,10 +836,7 @@
 											<svg class="contacts__icon address-icon-top">
 												<use href="./images/icons.svg#icon-address"></use>
 											</svg>
-											<p>
-												st. Vasilkivska, 7A<br />
-												Kyiv, 08132
-											</p>
+											<p>st. Vasilkivska, 7A, Kyiv, 08132</p>
 										</a>
 									</li>
 									<li class="contacts__item">

@@ -64,7 +64,7 @@
 
 	@media screen and (max-width: 1199px) {
 		font-size: 28px;
-		line-height: (33 / 28);
+		line-height: calc(33 / 28);
 	}
 }
 
@@ -75,14 +75,14 @@
 
 	@media screen and (max-width: 767px) {
 		font-size: 16px;
-		line-height: (26 / 16);
+		line-height: calc(26 / 16);
 	}
 }
 
 .about__text {
 	font-size: 14px;
 	font-weight: 400;
-	line-height: (26 / 14);
+	line-height: calc(26 / 14);
 	color: $COLOR_TEXT;
 }
 

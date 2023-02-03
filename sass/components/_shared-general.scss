@@ -1,44 +1,3 @@
-// .centered-text {
-// 	text-align: center;
-// }
-
-// .container {
-// 	width: 1200px;
-// 	margin-inline: auto;
-// 	padding-inline: 15px;
-// }
-
-// .flex {
-// 	display: flex;
-// }
-
-// .flex-vert-centered {
-// 	display: flex;
-// 	align-items: center;
-// }
-
-// .nounderline {
-// 	text-decoration: none;
-// }
-
-// .nobullet {
-// 	list-style: none;
-// }
-
-// .visually-hidden {
-// 	position: absolute;
-// 	width: 1px;
-// 	height: 1px;
-// 	margin: -1px;
-// 	border: 0;
-// 	padding: 0;
-
-// 	white-space: nowrap;
-// 	clip-path: inset(100%);
-// 	clip: rect(0 0 0 0);
-// 	overflow: hidden;
-// }
-
 .container {
 	max-width: 448px;
 	margin-inline: auto;
@@ -53,11 +12,11 @@
 	}
 }
 
-.hero-media-list::before,
+.hero__media-list::before,
 %comp-section__intro::before,
 .page-footer__media-list::before {
 	content: '';
-	/* display: inline-block; */
+
 	width: 60px;
 	height: 1px;
 	margin-right: 20px;
@@ -68,9 +27,4 @@
 /* For EMERGENCIES (default image from the img tag) */
 picture img {
 	object-fit: cover;
-}
-
-/* Temporary BLACK Background class */
-.black-bg {
-	background-color: black;
 }

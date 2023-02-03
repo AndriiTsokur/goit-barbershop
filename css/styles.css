@@ -296,44 +296,44 @@ ul {
 /* ===================== Header - END =================== */
 
 /* ================ Section Hero - START ================ */
-.hero > .container {
-	/* background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+/* .hero > .container {
+	background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
 		url(../images/bg-hero-01.jpg);
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	background-size: cover; */
+	background-size: cover;
 
 	position: relative;
-}
+} */
 
-.hero-media-content {
+/* .hero-media-content {
 	position: relative;
 
 	width: 100px;
 
 	background-color: var(--color-contrast);
-}
+} */
 
-.hero-media-list {
+/* .hero-media-list {
 	position: absolute;
 	bottom: 40px;
 	left: 34px;
 
-	/* width: 100%; */
+	width: 100%;
 
 	transform: rotate(-90deg);
 	transform-origin: left center;
-}
+} */
 
-.hero-media-list::before {
+/* .hero-media-list::before {
 	margin-right: 40px;
 }
 
 .hero-media-item:first-child {
 	margin-right: 40px;
-}
+} */
 
-.hero-content {
+/* .hero-content {
 	flex-grow: 1;
 	padding: 272px 526px 208px 100px;
 
@@ -343,9 +343,9 @@ ul {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
+} */
 
-.hero-heading {
+/* .hero-heading {
 	margin-bottom: 20px;
 
 	font-family: 'Raleway', sans-serif;
@@ -353,11 +353,11 @@ ul {
 	line-height: 1.18;
 	letter-spacing: 0.05em;
 	color: var(--color-contrast);
-}
+} */
 
-.hero-subtitle {
+/* .hero-subtitle {
 	margin-bottom: 0px;
-}
+} */
 
 .hero-carousel-list {
 	position: absolute;
