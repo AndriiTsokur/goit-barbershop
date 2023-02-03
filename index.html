@@ -791,14 +791,15 @@
 				</div>
 			</section>
 
-			<!-- <div class="contact-wrapper comp-section"> -->
-			<!-- <div class="container flex"> -->
-			<!-- Section Online Booking -->
-			<!-- <section class="booking">
-						<h2 class="comp-section-heading heading-light booking-heading">Online-booking</h2>
-						<form class="booking-form" action="javascript:void(0);">
+			<!-- Block Feedback -->
+			<div class="feedback">
+				<div class="container">
+					<!-- Section Online Booking -->
+					<section class="booking">
+						<h2 class="booking__heading">Online-booking</h2>
+						<form class="booking__form" action="javascript:void(0);">
 							<input
-								class="booking-form-input"
+								class="booking__input"
 								name="user_name"
 								type="text"
 								placeholder="Name*"
@@ -806,93 +807,90 @@
 								required
 							/>
 							<input
-								class="booking-form-input"
+								class="booking__input"
 								name="user_tel"
 								type="tel"
 								placeholder="Phone*"
 								autocomplete="on"
 								required
 							/>
-							<textarea
-								class="booking-form-message"
-								name="user_msg"
-								placeholder="Message"
-							></textarea>
-							<button class="comp-btn btn-light" type="submit">send</button>
+							<textarea class="booking__message" name="user_msg" placeholder="Message"></textarea>
+							<button class="booking__btn" type="submit">send</button>
 						</form>
-					</section> -->
+					</section>
 
-			<!-- Section Contacts -->
-			<!-- <section id="contacts" class="contacts">
-						<h2 class="comp-section-heading heading-light contacts-heading">Contacts</h2>
+					<!-- Section Contacts -->
+					<section id="contacts" class="contacts">
+						<h2 class="contacts__heading">Contacts</h2>
 
-						<address class="address">
-							<ul class="address-list">
-								<li class="address-item nobullet">
-									<a
-										class="address-text address-strong comp-link-behaviour nounderline"
-										href="https://goo.gl/maps/zxTj6L3gLXapYXbF9"
-										target="_blank"
-										rel="noreferrer noopener nofollow"
-									>
-										<svg class="address-icon address-icon-top">
-											<use href="./images/icons.svg#icon-address"></use>
-										</svg>
-										<p>
-											st. Vasilkivska, 7A<br />
-											Kyiv, 08132
-										</p>
-									</a>
-								</li>
-								<li class="address-item nobullet">
-									<a
-										class="address-text address-text-centered comp-link-behaviour nounderline"
-										href="tel:+380441111111"
-									>
-										<svg class="address-icon">
-											<use href="./images/icons.svg#icon-phone"></use>
-										</svg>
-										<p>+38 044 111 11 11</p>
-									</a>
-								</li>
-								<li class="address-item nobullet">
-									<a
-										class="address-text address-text-centered comp-link-behaviour"
-										href="mailto:barbershop@email.com"
-									>
-										<svg class="address-icon">
-											<use href="./images/icons.svg#icon-mail"></use>
-										</svg>
-										<p>barbershop@email.com</p>
-									</a>
-								</li>
-							</ul>
-						</address>
+						<div class="contacts__wrapper">
+							<address>
+								<ul>
+									<li class="contacts__item">
+										<a
+											class="contacts__text"
+											href="https://goo.gl/maps/zxTj6L3gLXapYXbF9"
+											target="_blank"
+											rel="noreferrer noopener nofollow"
+										>
+											<svg class="contacts__icon address-icon-top">
+												<use href="./images/icons.svg#icon-address"></use>
+											</svg>
+											<p>
+												st. Vasilkivska, 7A<br />
+												Kyiv, 08132
+											</p>
+										</a>
+									</li>
+									<li class="contacts__item">
+										<a class="contacts__text address-text-centered" href="tel:+380441111111">
+											<svg class="contacts__icon">
+												<use href="./images/icons.svg#icon-phone"></use>
+											</svg>
+											<p>+38 044 111 11 11</p>
+										</a>
+									</li>
+									<li class="contacts__item">
+										<a
+											class="contacts__text address-text-centered"
+											href="mailto:barbershop@email.com"
+										>
+											<svg class="contacts__icon">
+												<use href="./images/icons.svg#icon-mail"></use>
+											</svg>
+											<p>barbershop@email.com</p>
+										</a>
+									</li>
+								</ul>
+							</address>
 
-						<h3 class="comp-section-intro contacts-intro heading-light">Working hours</h3>
-						<p class="address-text">Every day from 9:00 to 22:00</p>
-					</section> -->
-			<!-- </div> -->
-			<!-- </div> -->
+							<div>
+								<h3 class="contacts__intro">Working hours</h3>
+								<p class="contacts__text">Every day from 9:00 to 22:00</p>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
 		</main>
 
-		<!-- <footer class="footer">
-			<div class="container flex-vert-centered">
-				<p class="footer-copyright">&copy; Copyright 2022</p>
+		<footer class="page-footer">
+			<div class="container">
+				<p class="page-footer__copyright">&copy; Copyright 2022</p>
 
-				<ul class="footer-media-list flex-vert-centered">
-					<li class="footer-media-item nobullet">
+				<ul class="page-footer__media-list flex-vert-centered">
+					<li>
 						<a
-							class="comp-media-link comp-link-behaviour nounderline"
+							class="page-footer__media-link"
 							href="https://www.instagram.com/"
 							target="_blank"
 							rel="noopener noreferrer nofollow"
 							>Instagram</a
 						>
 					</li>
-					<li class="footer-media-item nobullet">
+					<li>
 						<a
-							class="comp-media-link comp-link-behaviour nounderline"
+							class="page-footer__media-link"
 							href="https://www.youtube.com/"
 							target="_blank"
 							rel="noopener noreferrer nofollow"
@@ -901,7 +899,7 @@
 					</li>
 				</ul>
 			</div>
-		</footer> -->
+		</footer>
 
 		<!-- Modal Section -->
 		<!-- <div class="backdrop is-hidden" data-modal>
