@@ -31,39 +31,56 @@
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
-		<!-- <header class="header">
-			<div class="container flex-vert-centered">
-				<nav class="header-navigation flex-vert-centered">
-					<a class="header-logo" href="./index.html">
-						<svg class="header-logo-icon" width="69" height="56">
-							<use href="./images/icons.svg#icon-logo"></use>
-						</svg>
-					</a>
+		<header class="page-header">
+			<div class="container">
+				<nav>
+					<!-- Navigation Mobile -->
+					<div class="page-header__nav-mobile">
+						<a href="./index.html">
+							<svg class="page-header__logo-icon" width="69" height="56">
+								<use href="./images/icons.svg#icon-logo"></use>
+							</svg>
+						</a>
 
-					<ul class="header-list flex-vert-centered">
-						<li class="header-item nobullet">
-							<a class="header-link comp-link-behaviour nounderline" href="#about">About</a>
-						</li>
-						<li class="header-item nobullet">
-							<a class="header-link comp-link-behaviour nounderline" href="#prices"
-								>Services and prices</a
-							>
-						</li>
-						<li class="header-item nobullet">
-							<a class="header-link comp-link-behaviour nounderline" href="#barbers">Barbers</a>
-						</li>
-						<li class="header-item nobullet">
-							<a class="header-link comp-link-behaviour nounderline" href="#contacts">Contacts</a>
-						</li>
-					</ul>
+						<button class="page-header__menu-btn" type="button">
+							<svg class="page-header__menu-icon" width="24" height="16">
+								<use href="./images/icons.svg#icon-menu"></use>
+							</svg>
+						</button>
+					</div>
+
+					<!-- Navigation Regular -->
+					<div class="page-header__nav-regular">
+						<a href="./index.html">
+							<svg class="page-header__logo" width="69" height="56">
+								<use href="./images/icons.svg#icon-logo"></use>
+							</svg>
+						</a>
+
+						<ul class="nav__list">
+							<li>
+								<a class="nav__link" href="#about">About</a>
+							</li>
+							<li>
+								<a class="nav__link" href="#prices">Services and prices</a>
+							</li>
+							<li>
+								<a class="nav__link" href="#barbers">Barbers</a>
+							</li>
+							<li>
+								<a class="nav__link" href="#contacts">Contacts</a>
+							</li>
+						</ul>
+					</div>
 				</nav>
-
-				<a class="header-link header-phone comp-link-behaviour nounderline" href="tel:+380441111111"
-					>+38 044 111 11 11</a
-				>
-				<button class="comp-btn btn-light" data-modal-open type="button">Online-booking</button>
+				<div class="page-header__contacts">
+					<a class="page-header__phone nav__link" href="tel:+380441111111">+38 044 111 11 11</a>
+					<button class="page-header__btn comp-btn btn-light" data-modal-open type="button">
+						Online-booking
+					</button>
+				</div>
 			</div>
-		</header> -->
+		</header>
 
 		<main>
 			<!-- Section Hero -->
@@ -935,5 +952,6 @@
 		</div> -->
 
 		<!-- <script src="./js/modal.js"></script> -->
+		<script src="./js/script.js"></script>
 	</body>
 </html>

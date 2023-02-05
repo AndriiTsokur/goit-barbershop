@@ -243,7 +243,7 @@ ul {
 /* ================== Components - END ================== */
 
 /* =================== Header - START =================== */
-.header {
+/* .header {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -251,34 +251,34 @@ ul {
 
 	width: 100%;
 	padding-block: 32px;
-}
+} */
 
-.header > .container {
+/* .header > .container {
 	padding-right: calc(15px + 17px);
-}
+} */
 
-.header-logo-icon {
+/* .header-logo-icon {
 	display: block;
 
 	fill: var(--color-main);
-}
+} */
 
 /* .header-navigation {
 	...
 } */
 
-.header-list {
+/* .header-list {
 	margin-left: 131px;
 
 	font-size: 12px;
 	line-height: 1.33;
-}
+} */
 
-.header-item:not(:last-child) {
+/* .header-item:not(:last-child) {
 	margin-right: 30px;
-}
+} */
 
-.header-link {
+/* .header-link {
 	padding-block: 20px;
 
 	font-size: 12px;
@@ -286,7 +286,7 @@ ul {
 	line-height: 1.33;
 	letter-spacing: 0.1em;
 	color: var(--color-contrast);
-}
+} */
 
 .header-phone {
 	margin-left: auto;
