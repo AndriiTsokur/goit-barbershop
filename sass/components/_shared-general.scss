@@ -14,7 +14,8 @@
 
 .hero__media-list::before,
 %comp-section__intro::before,
-.page-footer__media-list::before {
+.page-footer__media-list::before,
+.mobile-menu__media-wrapper:before {
 	content: '';
 
 	width: 60px;
@@ -27,4 +28,9 @@
 /* For EMERGENCIES (default image from the img tag) */
 picture img {
 	object-fit: cover;
+}
+
+.is-frozen {
+	overflow: hidden;
+	scrollbar-gutter: stable;
 }

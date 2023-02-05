@@ -8,6 +8,9 @@
 		modal: document.querySelector('[data-modal]'),
 	};
 
+	let htmlClass = document.querySelector('html').classList;
+	let mobileMenuClass = document.querySelector('.mobile-backdrop').classList;
+
 	console.log(refs.openModalBtns.length);
 
 	for (let i = 0; i < refs.openModalBtns.length; i++) {
@@ -18,6 +21,9 @@
 
 	function toggleModal() {
 		refs.modal.classList.toggle('is-hidden');
-		document.querySelector('html').classList.toggle('is-frozen');
+
+		if (mobileMenuClass.contains('is-hidden')) {
+			htmlClass.toggle('is-frozen');
+		}
 	}
 })();

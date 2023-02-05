@@ -47,6 +47,63 @@
 								<use href="./images/icons.svg#icon-menu"></use>
 							</svg>
 						</button>
+
+						<div class="mobile-backdrop is-hidden">
+							<div class="mobile-menu">
+								<button class="mobile-menu__close-btn" type="button">
+									<svg class="mobile-menu__close-icon" width="19" height="19">
+										<use href="./images/icons.svg#icon-close"></use>
+									</svg>
+								</button>
+
+								<div class="mobile-menu__wrapper">
+									<ul class="mobile-menu__list">
+										<li>
+											<a class="mobile-menu__link" href="#about">About</a>
+										</li>
+										<li>
+											<a class="mobile-menu__link" href="#prices">Services and prices</a>
+										</li>
+										<li>
+											<a class="mobile-menu__link" href="#barbers">Barbers</a>
+										</li>
+										<li>
+											<a class="mobile-menu__link" href="#contacts">Contacts</a>
+										</li>
+									</ul>
+
+									<div class="mobile-menu__contacts">
+										<a class="mobile-menu__link" href="tel:+380441111111">+38 044 111 11 11</a>
+										<button class="mobile-menu__btn" data-modal-open type="button">
+											Online-booking
+										</button>
+									</div>
+
+									<div class="mobile-menu__media-wrapper">
+										<ul class="mobile-menu__media-list">
+											<li>
+												<a
+													class="mobile-menu__media-link"
+													href="https://www.instagram.com/"
+													target="_blank"
+													rel="noopener noreferrer nofollow"
+													>Instagram</a
+												>
+											</li>
+											<li>
+												<a
+													class="mobile-menu__media-link"
+													href="https://www.youtube.com/"
+													target="_blank"
+													rel="noopener noreferrer nofollow"
+													>Youtube</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<!-- Navigation Regular -->
@@ -75,9 +132,7 @@
 				</nav>
 				<div class="page-header__contacts">
 					<a class="page-header__phone nav__link" href="tel:+380441111111">+38 044 111 11 11</a>
-					<button class="page-header__btn comp-btn btn-light" data-modal-open type="button">
-						Online-booking
-					</button>
+					<button class="page-header__btn" data-modal-open type="button">Online-booking</button>
 				</div>
 			</div>
 		</header>
@@ -892,7 +947,7 @@
 			<div class="container">
 				<p class="page-footer__copyright">&copy; Copyright 2022</p>
 
-				<ul class="page-footer__media-list flex-vert-centered">
+				<ul class="page-footer__media-list">
 					<li>
 						<a
 							class="page-footer__media-link"
@@ -916,21 +971,19 @@
 		</footer>
 
 		<!-- Modal Section -->
-		<!-- <div class="backdrop is-hidden" data-modal>
+		<div class="modal-backdrop is-hidden" data-modal>
 			<div class="modal">
-				<button class="modal-close-btn" data-modal-close type="button">
-					<svg class="modal-close-icon" width="8" height="8">
+				<button class="modal__close-btn" data-modal-close type="button">
+					<svg class="modal__close-icon" width="8" height="8">
 						<use href="./images/icons.svg#icon-close"></use>
 					</svg>
 				</button>
 
-				<p class="comp-section-subtitle subtitle-light modal-title centered-text">
-					Make a booking and we will call you back
-				</p>
+				<p class="modal__title">Make a booking and we will call you back</p>
 
-				<form class="modal-form" action="javascript:void(0);">
+				<form class="modal__form" action="javascript:void(0);">
 					<input
-						class="booking-form-input modal-form-input"
+						class="modal__input booking__input"
 						name="user_name"
 						type="text"
 						placeholder="Name*"
@@ -938,20 +991,20 @@
 						required
 					/>
 					<input
-						class="booking-form-input modal-form-input"
+						class="modal__input booking__input"
 						name="user_tel"
 						type="tel"
 						placeholder="Phone*"
 						autocomplete="on"
 						required
 					/>
-					<textarea class="booking-form-message" name="user_msg" placeholder="Message"></textarea>
-					<button class="comp-btn btn-light modal-btn" type="submit">send</button>
+					<textarea class="booking__message" name="user_msg" placeholder="Message"></textarea>
+					<button class="modal__btn" type="submit">send</button>
 				</form>
 			</div>
-		</div> -->
+		</div>
 
-		<!-- <script src="./js/modal.js"></script> -->
+		<script src="./js/modal.js"></script>
 		<script src="./js/script.js"></script>
 	</body>
 </html>

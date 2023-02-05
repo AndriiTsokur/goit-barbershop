@@ -288,10 +288,10 @@ ul {
 	color: var(--color-contrast);
 } */
 
-.header-phone {
+/* .header-phone {
 	margin-left: auto;
 	margin-right: 43px;
-}
+} */
 
 /* ===================== Header - END =================== */
 
@@ -863,7 +863,7 @@ ul {
 /* ==================== Footer - END ==================== */
 
 /* ==================== Modal - START =================== */
-.backdrop {
+/* .backdrop {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -959,5 +959,5 @@ ul {
 
 .modal-btn {
 	margin-inline: auto;
-}
+} */
 /* ===================== Modal - END ==================== */

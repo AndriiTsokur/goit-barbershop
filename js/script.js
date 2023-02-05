@@ -1,6 +1,24 @@
-const backdropParent = document.querySelector('.page-header').firstElementChild;
+'use strict';
 
-window.addEventListener('scroll', function () {
-	let opacity = window.scrollY / 150;
-	backdropParent.style.setProperty('--backdrop-opacity', opacity);
-});
+(() => {
+	// Mobile Header shadowing
+	const backdropParent = document.querySelector('.page-header').firstElementChild;
+
+	window.addEventListener('scroll', function () {
+		let opacity = window.scrollY / 150;
+		backdropParent.style.setProperty('--backdrop-opacity', opacity);
+	});
+
+	// Adaptive Menu
+	let adaptiveMenu = document.querySelector('.mobile-backdrop');
+	let menuBtnOpen = document.querySelector('.page-header__menu-btn');
+	let menuBtnClose = document.querySelector('.mobile-menu__close-btn');
+
+	menuBtnOpen.addEventListener('click', toggleMenu);
+	menuBtnClose.addEventListener('click', toggleMenu);
+
+	function toggleMenu() {
+		adaptiveMenu.classList.toggle('is-hidden');
+		document.querySelector('html').classList.toggle('is-frozen');
+	}
+})();
