@@ -11,7 +11,7 @@
 	let htmlClass = document.querySelector('html').classList;
 	let mobileMenuClass = document.querySelector('.mobile-backdrop').classList;
 
-	console.log(refs.openModalBtns.length);
+	// console.log(refs.openModalBtns.length);
 
 	for (let i = 0; i < refs.openModalBtns.length; i++) {
 		refs.openModalBtns[i].addEventListener('click', toggleModal);

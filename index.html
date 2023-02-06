@@ -163,13 +163,129 @@
 						</ul>
 					</div>
 
-					<div class="hero__content">
-						<p class="hero__intro">A hair salon for men in Kyiv</p>
-						<h1 class="hero__heading">BarberShop</h1>
-						<p class="hero__subtitle">
-							We are experts in trendy men’s haircuts.<br />
-							We work quickly, carefully and with style.
-						</p>
+					<div class="hero-wrapper">
+						<picture class="hero-slider__picture">
+							<source
+								media="(min-width: 1200px)"
+								srcset="
+									./images/bg-hero__desktop-03.webp    1x,
+									./images/bg-hero__desktop-03@2x.webp 2x
+								"
+								type="image/webp"
+							/>
+							<source
+								media="(min-width: 1200px)"
+								srcset="./images/bg-hero__desktop-03.jpg 1x, ./images/bg-hero__desktop-03@2x.jpg 2x"
+								type="image/jpeg"
+							/>
+
+							<source
+								media="(min-width: 768px)"
+								srcset="./images/bg-hero__tablet-03.webp 1x, ./images/bg-hero__tablet-03@2x.webp 2x"
+								type="image/webp"
+							/>
+							<source
+								media="(min-width: 768px)"
+								srcset="./images/bg-hero__tablet-03.jpg 1x, ./images/bg-hero__tablet-03@2x.jpg 2x"
+								type="image/jpeg"
+							/>
+
+							<source
+								srcset="./images/bg-hero__mobile-03.webp 1x, ./images/bg-hero__mobile-03@2x.webp 2x"
+								type="image/webp"
+							/>
+							<source
+								srcset="./images/bg-hero__mobile-03.jpg 1x, ./images/bg-hero__mobile-03@2x.jpg 2x"
+								type="image/jpeg"
+							/>
+
+							<img src="./images/bg-hero__desktop-03.jpg" alt="Barber shaves a client" />
+						</picture>
+
+						<picture class="hero-slider__picture">
+							<source
+								media="(min-width: 1200px)"
+								srcset="
+									./images/bg-hero__desktop-02.webp    1x,
+									./images/bg-hero__desktop-02@2x.webp 2x
+								"
+								type="image/webp"
+							/>
+							<source
+								media="(min-width: 1200px)"
+								srcset="./images/bg-hero__desktop-02.jpg 1x, ./images/bg-hero__desktop-02@2x.jpg 2x"
+								type="image/jpeg"
+							/>
+
+							<source
+								media="(min-width: 768px)"
+								srcset="./images/bg-hero__tablet-02.webp 1x, ./images/bg-hero__tablet-02@2x.webp 2x"
+								type="image/webp"
+							/>
+							<source
+								media="(min-width: 768px)"
+								srcset="./images/bg-hero__tablet-02.jpg 1x, ./images/bg-hero__tablet-02@2x.jpg 2x"
+								type="image/jpeg"
+							/>
+
+							<source
+								srcset="./images/bg-hero__mobile-02.webp 1x, ./images/bg-hero__mobile-02@2x.webp 2x"
+								type="image/webp"
+							/>
+							<source
+								srcset="./images/bg-hero__mobile-02.jpg 1x, ./images/bg-hero__mobile-02@2x.jpg 2x"
+								type="image/jpeg"
+							/>
+
+							<img src="./images/bg-hero__desktop-02.jpg" alt="Barber shaves a client" />
+						</picture>
+
+						<picture class="hero-slider__picture">
+							<source
+								media="(min-width: 1200px)"
+								srcset="
+									./images/bg-hero__desktop-01.webp    1x,
+									./images/bg-hero__desktop-01@2x.webp 2x
+								"
+								type="image/webp"
+							/>
+							<source
+								media="(min-width: 1200px)"
+								srcset="./images/bg-hero__desktop-01.jpg 1x, ./images/bg-hero__desktop-01@2x.jpg 2x"
+								type="image/jpeg"
+							/>
+
+							<source
+								media="(min-width: 768px)"
+								srcset="./images/bg-hero__tablet-01.webp 1x, ./images/bg-hero__tablet-01@2x.webp 2x"
+								type="image/webp"
+							/>
+							<source
+								media="(min-width: 768px)"
+								srcset="./images/bg-hero__tablet-01.jpg 1x, ./images/bg-hero__tablet-01@2x.jpg 2x"
+								type="image/jpeg"
+							/>
+
+							<source
+								srcset="./images/bg-hero__mobile-01.webp 1x, ./images/bg-hero__mobile-01@2x.webp 2x"
+								type="image/webp"
+							/>
+							<source
+								srcset="./images/bg-hero__mobile-01.jpg 1x, ./images/bg-hero__mobile-01@2x.jpg 2x"
+								type="image/jpeg"
+							/>
+
+							<img src="./images/bg-hero__desktop-01.jpg" alt="Barber shaves a client" />
+						</picture>
+
+						<div class="hero__content">
+							<p class="hero__intro">A hair salon for men in Kyiv</p>
+							<h1 class="hero__heading">BarberShop</h1>
+							<p class="hero__subtitle">
+								We are experts in trendy men’s haircuts.<br />
+								We work quickly, carefully and with style.
+							</p>
+						</div>
 					</div>
 
 					<ul class="carousel__list flex">
@@ -998,6 +1114,7 @@
 			</div>
 		</div>
 
+		<script src="./js/slider.js"></script>
 		<script src="./js/modal.js"></script>
 		<script src="./js/script.js"></script>
 	</body>
